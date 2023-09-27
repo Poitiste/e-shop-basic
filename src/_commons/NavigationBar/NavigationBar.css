@@ -1,0 +1,13 @@
+nav{
+    box-sizing: border-box;
+}
+
+.nav-wrapper ul li{
+    font-weight: bold;
+    font-size: larger;
+}
+
+#logo_company{
+    height: 62px;
+    width: 70px;
+}

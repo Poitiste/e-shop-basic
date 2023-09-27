@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo_company{
+  width: 200px;
+  height: 100px;
+  display: inline-flex;
+  left: 0;
+}
+
+a{
+  text-decoration: none;
+  color: beige;
+}

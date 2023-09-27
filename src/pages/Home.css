@@ -1,0 +1,13 @@
+#best-seller{
+    box-sizing: border-box;
+}
+
+#best-seller img{
+    width: 200px;
+    height: 200px;
+}
+
+#best-seller div div{
+    border: 1px solid #292626;
+    text-align: center;
+}
