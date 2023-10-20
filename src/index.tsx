@@ -6,15 +6,20 @@ import { Toaster } from 'react-hot-toast';
 
 import App from './App';
 import ErrorPage from './_commons/ErrorPage';
-import Shop from './pages/Shop';
-import Home from './pages/Home';
+import Shop from './_components/Shop/Shop';
+import Home from './_components/Home';
 import Services from './_components/Services';
-import ProductDetail from './pages/ProductDetails';
-import Connection from './pages/Connection';
+import ProductDetail from './_components/Shop/ProductDetails';
+import Connection from './_components/Connection';
 import LoginForm from './_commons/LoginForm';
 import RegisterForm from './_commons/RegisterForm';
 import ForgotPassword from './_commons/ForgotPassword';
 import Checkout from './_components/Checkout';
+import Dashboard from './_components/admin/Dashboard/Dashboard';
+import ShopComponents from './_components/Shop/ShopComponents';
+import ShopPeripherals from './_components/Shop/ShopPeripherals';
+import ShopHome from './_components/Shop/ShopHome';
+import EditCarousel from './_components/admin/EditCarousel';
 
 const router = createBrowserRouter([
   {
@@ -28,19 +33,27 @@ const router = createBrowserRouter([
       },
       {
         path: "/shop",
-        element: <Shop />,
-      },
-      {
-        path: "/shop/:category",
-        element: <Shop category='' />,
+        element: <ShopHome/>
       },
       {
         path: "/shop/promotions",
-        element: <Shop category='promotions' />
+        element: <Shop/>
       },
       {
         path: "/shop/news",
-        element: <Shop category='news' />
+        element: <Shop/>
+      },
+      {
+        path: "/shop/composants",
+        element: <ShopComponents/>
+      },
+      {
+        path: "/shop/peripheriques",
+        element: <ShopPeripherals/>
+      },
+      {
+        path: "/shop/:category",
+        element: <Shop/>
       },
       {
         path: "/shop/detail/:id",
@@ -71,10 +84,22 @@ const router = createBrowserRouter([
         element: <Checkout/>
       },
       {
+        path: "dashboard",
+        element: <Dashboard/>
+      },
+      {
+        path: "admin/carousel",
+        element: <EditCarousel/>
+      },
+      {
         path: "*",
         errorElement: <ErrorPage />
       }
     ],
+  },
+  {
+    path: ".",
+    errorElement: <ErrorPage />
   }
 ]);
 

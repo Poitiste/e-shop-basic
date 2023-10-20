@@ -7,9 +7,7 @@ export default class Product{
     description: string;
     quantity: number;
     picture: string;
-    firstCategory: string;
-    secondCategory: string;
-    thirdCategory: string;
+    categories: Array<string>;
     price: number;
     created: Date;
     updated: Date;
@@ -24,9 +22,7 @@ export default class Product{
         description: string="description",
         quantity: number=1,
         picture: string="http://...",
-        firstCategory: string="Stockage",
-        secondCategory: string="Disque dur",
-        thirdCategory: string="SSD",
+        categories: Array<string> = ['stockage','disque_dur','ssd'],
         price: number,
         created: Date = new Date(),
         updated: Date = new Date(),
@@ -40,9 +36,7 @@ export default class Product{
         this.description = description;
         this.quantity = quantity;
         this.picture = picture;
-        this.firstCategory = firstCategory;
-        this.secondCategory= secondCategory;
-        this.thirdCategory=thirdCategory
+        this.categories = categories;
         this.price=price;
         this.created = created;
         this.updated = updated;

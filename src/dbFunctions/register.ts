@@ -1,4 +1,4 @@
-import { FormUser } from "../_commons/types";
+import { FormUser } from "../const/types";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { redirect } from "react-router-dom";

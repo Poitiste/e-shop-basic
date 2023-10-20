@@ -1,8 +1,8 @@
 import React, { FunctionComponent, useState } from "react";
-import { Field } from "./types"
+import { Field } from "../const/types"
 import { validatorMail, validatorPasword, validatorPhoneNumber, validatorPostal, validatorSIRET, validatorString } from "./validator";
 import { useNavigate } from "react-router-dom";
-import { register } from "../services/register";
+import { register } from "../dbFunctions/register";
 
 type Form = {
     firstName: Field,

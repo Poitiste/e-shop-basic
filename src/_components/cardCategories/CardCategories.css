@@ -1,0 +1,9 @@
+.card-content p {
+    text-align: center;
+    font-size:larger;
+    font-weight: bold;
+}
+
+.card-image img{
+    object-fit: scale-down;
+}

@@ -1,9 +1,8 @@
-import React, { FunctionComponent, ReactEventHandler, useEffect, useState } from "react";
-import Product from "../models/product";
-import { Link, redirect, useParams } from "react-router-dom";
+import React, { FunctionComponent, useState } from "react";
+import { redirect } from "react-router-dom";
 import 'materialize-css/dist/css/materialize.min.css';
-import { Props, Field, FormProduct } from "../_commons/types"
-import { validatorString, validatorState, validatorBarcode, validatorQuantity, validatorCategory } from "../_commons/validator"
+import { Props, Field, FormProduct } from "../../const/types"
+import { validatorString, validatorState, validatorBarcode, validatorQuantity, validatorCategory } from "../../_commons/validator"
 
 const ProductForm: FunctionComponent<Props> = ({ product }) => {
     const [form, setForm] = useState<FormProduct>({
@@ -13,9 +12,7 @@ const ProductForm: FunctionComponent<Props> = ({ product }) => {
         state: { value: product.state, isValid: true },
         quantity: { value: product.quantity, isValid: true },
         description: { value: product.description, isValid: true },
-        firstCategory: { value: product.firstCategory, isValid: true },
-        secondCategory: { value: product.secondCategory, isValid: true },
-        thirdCategory: { value: product.thirdCategory, isValid: true },
+        categories: { value: product.categories, isValid: true },
         picture: { value: product.picture, isValid: true }
     });
 
@@ -65,27 +62,13 @@ const ProductForm: FunctionComponent<Props> = ({ product }) => {
             newForm = { ...newForm, ...{ quantity: inputQuantity } };
 
         //validator categories
-        let inputFirstCategory = validatorCategory(form.firstCategory.value);
-        let inputSecondCategory = validatorCategory(form.secondCategory.value);
-        let inputThirdCategory = validatorCategory(form.thirdCategory.value);
+        let inputCategories = validatorCategory(form.categories.value);
 
         //first category
-        if (inputFirstCategory.isValid)
-            newForm = { ...newForm, ...{ firstCategory: inputFirstCategory, updated: new Date() } };
+        if (inputCategories.isValid)
+            newForm = { ...newForm, ...{ categories: inputCategories, updated: new Date() } };
         else
-            newForm = { ...newForm, ...{ firstCategory: inputFirstCategory } };
-
-        //second category
-        if (inputSecondCategory.isValid)
-            newForm = { ...newForm, ...{ secondCategory: inputSecondCategory, updated: new Date() } };
-        else
-            newForm = { ...newForm, ...{ secondCategory: inputSecondCategory } };
-
-        //third category
-        if (inputThirdCategory.isValid)
-            newForm = { ...newForm, ...{ thirdCategory: inputThirdCategory, updated: new Date() } };
-        else
-            newForm = { ...newForm, ...{ thirdCategory: inputThirdCategory } };
+            newForm = { ...newForm, ...{ categories: inputCategories } };
 
         //validator description
         let inputDescription = validatorString(form.description.value);
@@ -103,9 +86,7 @@ const ProductForm: FunctionComponent<Props> = ({ product }) => {
             newForm.state.isValid &&
             newForm.quantity.isValid &&
             newForm.description.isValid &&
-            newForm.firstCategory.isValid &&
-            newForm.secondCategory.isValid &&
-            newForm.thirdCategory.isValid &&
+            newForm.categories.isValid &&
             newForm.picture.isValid
         );
     }

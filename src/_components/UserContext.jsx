@@ -1,5 +1,5 @@
 import { useState, useEffect, createContext } from 'react';
-import { isAuthenticated } from '../services/AuthService'
+import { isAuthenticated } from '../dbFunctions/AuthService'
 
 import LoginForm from '../_commons/LoginForm';
 

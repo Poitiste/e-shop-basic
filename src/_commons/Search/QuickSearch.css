@@ -1,0 +1,8 @@
+.input-field[type=text][placeholder]{
+    color: #f0f3ef;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.input-field::-ms-input-placeholder{
+    color: #f0f3ef;
+}

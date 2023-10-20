@@ -9,11 +9,8 @@
       "description": "<b>vitesse de lecture</b> : 250Mo/s<br/><b>vitesse d'écriture</b> : 150Mo/s",
       "quantity": 2,
       "picture": "https://www.cdiscount.com/pdt2/9/2/1/1/550x550/auc8765307756921/rw/disque-dur-ssd-western-digital-wd-blue-ssd-dis.jpg",
-      "firstCategory": "stockage",
-      "secondCategory": "disque dur",
-      "thirdCategory": "SSD",
-      "price": 20,
-      "bestSeller": true
+      "categories": ["stockage","disque_dur","ssd"],
+      "price": 20
     },
     {
       "id": 2,
@@ -24,11 +21,8 @@
       "description": "<table><th>Disque dur SSD de 240Go Western Digital Green<th><tr><td><b>vitesse de lecture</b> : 540Mo/s</td><td><b>vitesse d'écriture</b> : 465Mo/s</td></tr></table>",
       "quantity": 5,
       "picture": "https://www.cdiscount.com/pdt2/g/0/a/1/300x300/wds480g3g0a/rw/western-digital-green-disque-ssd-interne-480.jpg",
-      "firstCategory": "stockage",
-      "secondCategory": "disque dur",
-      "thirdCategory": "SSD",
-      "price": 24.99,
-      "bestSeller": true
+      "categories": ["stockage","disque_dur","ssd"],
+      "price": 24.99
     },
     {
       "id": 3,
@@ -39,11 +33,8 @@
       "description": "<table><tr><td>Compatible avec PC, PS5, PS4, Xbox One, Xbox Series X|S et d'autres plateformes avec un port de 3,5 mm</td></tr><tr><td>Les transducteurs à chambre double HyperX génèrent un son cristallin et moins de distorsions acoustiques Niveau de pression acoustique : 98dBSPL/mW à 1kHz</td></tr><tr><td>Confort certifié par Discord et TeamSpeak</td></tr><tr><td>Cadre aluminium durable avec arceau élargi</td></tr><tr><td>Câble tressé amovible avec commandes audio en ligne</td></tr><tr><td>Microphone amovible à réduction de bruit</td></tr><tr><td>Impédance: 65 Ω</td></tr><tr><td>Réponse en fréquence : 50Hz-18,000Hz</td></tr><tr><td>Le Cloud Alpha disposant d'un câble détachable, il est également important de s'assurer que ce dernier est complètement inséré dans l'oreillette du casque Aucune partie grise sur la prise jack ne doit être visible une fois le câble branché</td></tr></table>",
       "quantity": 3,
       "picture": "https://media.hardware.fr/ld/products/00/05/94/75/LD0005947526.jpg",
-      "firstCategory": "accessoire",
-      "secondCategory": "casque",
-      "thirdCategory": "gaming",
-      "price": 65.99,
-      "bestSeller": true
+      "categories": ["peripheriques","casque","gaming"],
+      "price": 65.99
     },
     {
       "id": 4,
@@ -54,11 +45,8 @@
       "description": "<table><tr><td>écran</td><td>AMOLED de 6,67 pouces</td></tr>< tr > <td>taux de rafraîchissement</ td > <td>120 Hz < /td></tr ><tr><td>CPU < /td><td>SoC Mediatek Dimensity 1080</td > </tr>< tr > <td>RAM < /td><td>jusqu'à 8 Go</td > </tr>< tr > <td>stockage < /td><td>256 Go</td > </tr> < tr > <td>batterie < /td><td>5000 mAh</tr ><tr><td>charge rapide < /td><td>compatible 67 W</tr ><th></th>< th > Appareil photo < /th>< tr > trois capteurs à l'arrière </tr>< tr > <td>grand - angle de 50 mégapixels(avec stabilisation optique) < /td></tr ><tr><td>ultra grand - angle de 8 mégapixels < /td></tr ><tr><td>objectif macro de 2 mégapixels < /td></tr ></table>",
       "quantity": 1,
       "picture": "https://i05.appmifile.com/903_item_fr/12/05/2023/a9f1c00ecd8f61b9dd67801bc8cff0f6!800x800!85.png",
-      "firstCategory": "téléphone",
-      "secondCategory": "smartphone",
-      "thirdCategory": "android",
-      "price": 209.99,
-      "bestSeller": true
+      "categories": ["smartphone","android","xioami"],
+      "price": 209.99
     },
     {
       "id": 5,
@@ -69,11 +57,8 @@
       "description": "Console de salon garantie 6 mois",
       "quantity": 1,
       "picture": "https://m.media-amazon.com/images/I/51x2uufH6SL.jpg",
-      "firstCategory": "jeuxLoisirs",
-      "secondCategory": "console",
-      "thirdCategory": "PS4",
-      "price": 150,
-      "bestSeller": false
+      "categories": ["jeux_et_loisirs","console","ps4"],
+      "price": 150
     },
     {
       "id": 6,
@@ -84,11 +69,20 @@
       "description": "Disque dur SSD de 2 To",
       "quantity": 5,
       "picture": "https://m.media-amazon.com/images/I/71icCF9jHLS.jpg",
-      "firstCategory": "stockage",
-      "secondCategory": "disque dur",
-      "thirdCategory": "HDD",
-      "price": 85,
-      "bestSeller": true
+      "categories" : ["stockage","disque_dur","hdd"],
+      "price": 85
+    },
+    {
+      "id": 7,
+      "name": "iPhone 14",
+      "brand": "Apple",
+      "barcode": "561965929292",
+      "state": "neuf",
+      "description": "de la merde comme d'hab",
+      "quantity": 10,
+      "picture": "https://www.cdiscount.com/pdt2/u/r/p/1/700x700/ippmax14128purp/rw/apple-iphone-14-pro-max-128gb-deep-purple.jpg",
+      "categories": ["smartphone","ios","iphone"],
+      "price": 1599.99
     }
   ],
   "users": [
@@ -107,473 +101,442 @@
     },
     {
       "typeAccount": "Customer",
-      "firstname": "Uni",
-      "lastname": "jeanbite",
-      "phoneNumber": "0696969696",
-      "mail": "jcqui@ph.com",
-      "siret": "",
-      "address": "69 rue des plaisirs",
-      "postal": "46800",
-      "city": "Montcuq",
-      "password": "51352957eafe4b6167a2967f76a846a67bb658d9e09c0b689ff04774499f9f0f",
-      "id": 2
-    },
-    {
-      "typeAccount": "Customer",
-      "firstname": "Jean-Luc",
-      "lastname": "labite",
-      "phoneNumber": "0956535353",
-      "mail": "mail@mail.mail",
-      "siret": "91748544745456",
-      "address": "69 rue des plaisirs",
-      "postal": "69000",
-      "city": "Lyon",
-      "password": "a6e412ab4550195a8a0731c8a7bf9c78024092d7b44c00cb331cc08df21882b9",
-      "id": 3
-    },
-    {
-      "typeAccount": "Customer",
-      "firstname": "michel",
-      "lastname": "michel",
-      "phoneNumber": "0875456456",
-      "mail": "michel@test.fr",
-      "siret": "a1510v0r37.548",
-      "address": "69 rue des plaisirs",
-      "postal": "69000",
-      "city": "Lyon",
-      "password": "a6e412ab4550195a8a0731c8a7bf9c78024092d7b44c00cb331cc08df21882b9",
-      "id": 4
-    },
-    {
-      "typeAccount": "Customer",
-      "firstname": "jean",
-      "lastname": "lasalle",
-      "phoneNumber": "0875456456",
-      "mail": "gdupif@truffes.fr",
-      "siret": "78945613278945",
-      "address": "69 rue des plaisirs",
-      "postal": "15484",
-      "city": "dzefdz",
-      "password": "a6e412ab4550195a8a0731c8a7bf9c78024092d7b44c00cb331cc08df21882b9",
-      "id": 5
-    },
-    {
-      "typeAccount": "Customer",
-      "firstname": "Jean",
-      "lastname": "Cule",
-      "phoneNumber": "0655656835",
+      "firstName": "Alexandre",
+      "lastName": "Borel",
+      "phoneNumber": "0676382462",
       "mail": "contact.ivsinfo@gmail.com",
-      "siret": "",
-      "address": "1 rue des cours de batterie",
-      "postal": "60620",
-      "city": "Boissy-Fresnoy",
-      "password": "a6e412ab4550195a8a0731c8a7bf9c78024092d7b44c00cb331cc08df21882b9",
-      "id": 6
-    },
-    {
-      "typeAccount": "Customer",
-      "firstname": "jean-michel",
-      "lastname": "bruitage",
-      "phoneNumber": "0875456456",
-      "mail": "jm.bruitage@oui.fr",
-      "siret": "",
-      "address": "15 dehjdizh",
-      "postal": "75000",
-      "city": "surmulotville",
-      "password": "a6e412ab4550195a8a0731c8a7bf9c78024092d7b44c00cb331cc08df21882b9",
-      "id": 7
-    },
-    {
-      "typeAccount": "Customer",
-      "firstname": "jean-michel",
-      "lastname": "bruitage",
-      "phoneNumber": "0875456456",
-      "mail": "jean-michel.bruitage@oui.fr",
-      "siret": "49845962929292",
-      "address": "15 dehjdizh",
-      "postal": "75000",
-      "city": "surmulotville",
-      "password": "a6e412ab4550195a8a0731c8a7bf9c78024092d7b44c00cb331cc08df21882b9",
-      "id": 8
-    },
-    {
-      "typeAccount": "Customer",
-      "firstname": "sam",
-      "lastname": "sam",
-      "phoneNumber": "0745464459",
-      "mail": "sam@mail.fr",
-      "siret": "",
-      "address": "1 rue des fleurs",
-      "postal": "05454",
-      "city": "Acy-en-multien",
-      "password": "a6e412ab4550195a8a0731c8a7bf9c78024092d7b44c00cb331cc08df21882b9",
-      "id": 9
-    },
-    {
-      "typeAccount": "Customer",
-      "firstname": "samantha",
-      "lastname": "sam",
-      "phoneNumber": "0696969696",
-      "mail": "samsam@mail.fr",
-      "siret": "",
-      "address": "42 rue du bois",
+      "siret": "81395591100017",
+      "address": "34 rue charles de gaulle",
       "postal": "60800",
       "city": "crépy-en-valois",
       "password": "a6e412ab4550195a8a0731c8a7bf9c78024092d7b44c00cb331cc08df21882b9",
-      "id": 10
-    },
-    {
-      "typeAccount": "Customer",
-      "firstname": "samantha",
-      "lastname": "lee",
-      "phoneNumber": "0618747889",
-      "mail": "samlee@mail.fr",
-      "siret": "",
-      "address": "12 rue de l'église",
-      "postal": "60440",
-      "city": "Varinfroy",
-      "password": "a6e412ab4550195a8a0731c8a7bf9c78024092d7b44c00cb331cc08df21882b9",
-      "id": 11
-    },
-    {
-      "typeAccount": "Customer",
-      "firstname": "samantha",
-      "lastname": "lee",
-      "phoneNumber": "0618747889",
-      "mail": "samanthalee@mail.fr",
-      "siret": "",
-      "address": "12 rue de l'église",
-      "postal": "60440",
-      "city": "Varinfroy",
-      "password": "a6e412ab4550195a8a0731c8a7bf9c78024092d7b44c00cb331cc08df21882b9",
-      "id": 12
-    },
-    {
-      "typeAccount": "Customer",
-      "firstname": "sami",
-      "lastname": "doo",
-      "phoneNumber": "0745464459",
-      "mail": "samy@mil.fr",
-      "siret": "",
-      "address": "12 rue de l'église",
-      "postal": "75000",
-      "city": "paris",
-      "password": "a6e412ab4550195a8a0731c8a7bf9c78024092d7b44c00cb331cc08df21882b9",
-      "id": 13
+      "id": 2
     }
   ],
   "categories": [
     {
-      "name" : "stockage"
-  },
-  {
-      "name" : "disque dur"
-  },
-  {
-      "name" : "hdd"
-  },
-  {
-      "name": "ssd"
-  },
-  {
-      "name" : "m2"
-  },
-  {
-      "name" : "nvme"
-  },
-  {
-      "name" : "cle usb"
-  },
-  {
-      "name" : "NAS"
-  },
-  {
-      "name" : "jeux & loisirs"
-  },
-  {
-      "name" : "jeux video"
-  },
-  {
-      "name" : "jeux vidéo"
-  },
-  {
-      "name" : "jeux"
-  },
-  {
-      "name": "console"
-  },
-  {
-      "name" : "xbox"
-  },
-  {
-      "name" : "xbox 360"
-  },
-  {
-      "name" : "xbox one"
-  },
-  {
-      "name" : "playstation"
-  },
-  {
-      "name" : "ps3"
-  },
-  {
-      "name" : "ps4"
-  },
-  {
-      "name": "ps5"
-  },
-  {
-      "name" : "nintendo"
-  },
-  {
-      "name" : "switch"
-  },
-  {
-      "name" : "pc"
-  },
-  {
-      "name" : "processeur"
-  },
-  {
-      "name" : "intel"
-  },
-  {
-      "name" : "intel celeron"
-  },
-  {
-      "name" : "intel pentium"
-  },
-  {
-      "name" : "intel core i3"
-  },
-  {
-      "name" : "intel core i5"
-  },
-  {
-      "name" : "intel core i7"
-  },
-  {
-      "name" : "intel core i9"
-  },
-  {
-      "name" : "amd"
-  },
-  {
-      "name" : "amd ryzen 3"
-  },
-  {
-      "name" : "amd ryzen 5"
-  },
-  {
-      "name" : "amd ryzen 5 pro"
-  },
-  {
-      "name" : "amd ryzen 7"
-  },
-  {
-      "name" : "amd ryzen 7 pro"
-  },
-  {
-      "name" : "amd ryzen 9"
-  },
-  {
-      "name" : "amd ryzen 9 pro"
-  },
-  {
-      "name" : "carte mere"
-  },
-  {
-      "name" : "carte mère"
-  },
-  {
-      "name" : "E-ATX"
-  },
-  {
-      "name" : "ATX"
-  },
-  {
-      "name" : "micro ATX"
-  },
-  {
-      "name" : "mini ATX"
-  },
-  {
-      "name" : "memoire"
-  },
-  {
-      "name" : "mémoire"
-  },
-  {
-      "name" : "RAM"
-  },
-  {
-      "name" : "DDR3"
-  },
-  {
-      "name" : "DDR4"
-  },
-  {
-      "name" : "DDR5"
-  },
-  {
-      "name" : "alimentation pc"
-  },
-  {
-      "name" : "modulaire"
-  },
-  {
-      "name" : "semi modulaire"
-  },
-  {
-      "name" : "non modulaire"
-  },
-  {
-      "name" : "ecran"
-  },
-  {
-      "name" : "écran"
-  },
-  {
-      "name" : "IPS"
-  },
-  {
-      "name" : "VA"
-  },
-  {
-      "name" : "TN"
-  },
-  {
-      "name" : "écran"
-  },
-  {
-      "name" : "clavier"
-  },
-  {
-      "name" : "mecanique"
-  },
-  {
-      "name" : "mécanique"
-  },
-  {
-      "name" : "membrane"
-  },
-  {
-      "name" : "souris"
-  },
-  {
-      "name" : "ergonomique"
-  },
-  {
-      "name" : "refroidissement"
-  },
-  {
-      "name" : "ventilateur"
-  },
-  {
-      "name" : "watercooling"
-  },
-  {
-      "name" : "RGB"
-  },
-  {
-      "name" : "carte grpahique"
-  },
-  {
-      "name" : "NVIDIA"
-  },
-  {
-      "name" : "geforce"
-  },
-  {
-      "name": "rtx"
-  },
-  {
-      "name" : "gtx"
-  },
-  {
-      "name" : "Ti"
-  },
-  {
-      "name" : "AMD"
-  },
-  {
-      "name" : "radeon"
-  },
-  {
-      "name" : "rx"
-  },
-  {
-      "name" : "xtx"
-  },
-  {
-      "name" : "boitier"
-  },
-  {
-      "name" : "boîtier"
-  },
-  {
-      "name" : "smartphone"
-  },
-  {
-      "name" : "android"
-  },
-  {
-      "name" : "ios"
-  },
-  {
-      "name" : "connectique"
-  },
-  {
-      "name" : "connectique pc"
-  },
-  {
-      "name" : "hdmi"
-  },
-  {
-      "name" : "dvi"
-  },
-  {
-      "name" : "display port"
-  },
-  {
-      "name" : "vga"
-  },
-  {
-      "name" : "usb"
-  },
-  {
-      "name" : "micro usb"
-  },
-  {
-      "name" : "type-C"
-  },
-  {
-      "name" : "lightning"
-  },
-  {
-      "name" : "connectique reseau"
-  },
-  {
-      "name" : "connectique réseau"
-  },
-  {
-      "name" : "rj45"
-  },
-  {
-      "name" : "cat 8.1"
-  },
-  {
-      "name" : "cat 8"
-  },
-  {
-      "name" : "cat 7"
-  },
-  {
-      "name" : "cat 6"
-  },
-  {
-      "name" : "cat 5"
-  }
+      "name": "composants",
+      "picture": "https://www.grosbill.com/images_produits/grosbill/familles/famille-13.jpg"
+    },
+    {
+      "name": "peripheriques",
+      "picture": "https://www.grosbill.com/images_produits/grosbill/familles/famille-14.jpg"
+    },
+    {
+      "name": "stockage",
+      "picture": "https://www.zdnet.com/a/img/2022/11/15/c07de404-fd5a-4ef8-b482-13d0841eb4ca/adobestock-323405056.jpg"
+    },
+    {
+      "name": "disque_dur",
+      "picture": "https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/7/4/8/748e66fe0d_112910_disque-dur-ouvert-stockage-informatique-01.jpg"
+    },
+    {
+      "name": "hdd",
+      "picture": "https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/7/4/8/748e66fe0d_112910_disque-dur-ouvert-stockage-informatique-01.jpg"
+    },
+    {
+      "name": "disque_ssd",
+      "picture": "https://www.enterprisestorageforum.com/wp-content/uploads/2023/04/m-2-vs-sata-storage-showdown.png"
+    },
+    {
+      "name": "ssd",
+      "picture": "https://media.ldlc.com/r1600/ld/products/00/05/77/35/LD0005773556_1_0005773565_0005773569.jpg"
+    },
+    {
+      "name": "m2",
+      "picture": "https://media.ldlc.com/r1600/ld/products/00/05/73/74/LD0005737471_1.jpg"
+    },
+    {
+      "name": "nvme",
+      "picture": "https://media.ldlc.com/r1600/ld/products/00/05/73/74/LD0005737471_1.jpg"
+    },
+    {
+      "name": "cle_usb",
+      "picture": "https://media.ldlc.com/r1600/ld/products/00/03/34/05/LD0003340551_2_0003340591.jpg"
+    },
+    {
+      "name": "NAS",
+      "picture": "https://static.macway.com/images/p/g/originalid_1225500/0/1225586/main/1225586_7ba2133.jpg"
+    },
+    {
+      "name": "jeux_et_loisirs",
+      "picture": "https://www.quizz.fr/files/2013/02/jeux.jpg"
+    },
+    {
+      "name": "jeux_video",
+      "picture": "https://sms.hypotheses.org/files/2018/12/36307963371_0d7899fa08_z.jpg"
+    },
+    {
+      "name": "jeux_de_societe",
+      "picture": "https://img.lemde.fr/2022/11/18/0/339/5832/3888/1045/696/75/0/2fb861e_1668788142068-dsc00978.jpg"
+    },
+    {
+      "name": "console",
+      "picture": "https://www.pdvg.it/wp-content/uploads/2021/03/Console_Nintendo_Xbox_PlayStation.jpg"
+    },
+    {
+      "name": "xbox",
+      "picture": "https://www.presse-citron.net/app/uploads/2020/05/Section-Xbox.jpg"
+    },
+    {
+      "name": "xbox_360",
+      "picture": "https://news.xbox.com/fr-fr/wp-content/uploads/sites/5/Xbox-360-Logo-86761422d6f7d1475931.png"
+    },
+    {
+      "name": "xbox_one",
+      "picture": "https://upload.wikimedia.org/wikipedia/fr/c/c4/Xbox_One_Logo.png"
+    },
+    {
+      "name": "playstation",
+      "picture": "https://cdn.sanity.io/images/kts928pd/production/467a7c536fef5b3538853dd5e5e0217e3e32ab2b-1600x900.png"
+    },
+    {
+      "name": "ps3",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PlayStation_3_logo_%282009%29.svg/1024px-PlayStation_3_logo_%282009%29.svg.png"
+    },
+    {
+      "name": "ps4",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/PlayStation_4_-_Logo.svg/2560px-PlayStation_4_-_Logo.svg.png"
+    },
+    {
+      "name": "ps5",
+      "picture": "https://cdn.gamekult.com/images/news/30/3050824323/sony-devoile-le-logo-de-la-playstation-5-pendant-sa-conference-ces-2020-eddbffdb.jpg"
+    },
+    {
+      "name": "nintendo",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Nintendo_red_logo.svg/1280px-Nintendo_red_logo.svg.png"
+    },
+    {
+      "name": "switch",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Nintendo_switch_logo.png/640px-Nintendo_switch_logo.png"
+    },
+    {
+      "name": "pc",
+      "picture": "https://media.materiel.net/cms/materiel_net/Guides_d_achat/Guide-Choix-PC/page1_photo1.jpg"
+    },
+    {
+      "name": "pc_fixe",
+      "picture": "https://www.rueducommerce.fr/media/produits/vibox/ii-5-pc-gamer-6209786-761322604_2604_1200x1200.jpeg"
+    },
+    {
+      "name": "pc_portable",
+      "picture": "https://m.media-amazon.com/images/I/71+3oOMogwL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "name": "processeur",
+      "picture": "https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/2/c/8/2c87c6244d_50183446_processeur-singkham-adobe-stock.jpg"
+    },
+    {
+      "name": "intel",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Intel_logo_%282006-2020%29.svg/2560px-Intel_logo_%282006-2020%29.svg.png"
+    },
+    {
+      "name": "intel_celeron",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Intel_Celeron_Logo_2020.png/800px-Intel_Celeron_Logo_2020.png"
+    },
+    {
+      "name": "intel_pentium",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/6/60/Intel_Pentium_Gold_Logo_2020.png"
+    },
+    {
+      "name": "intel core",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/2/28/Intel_Core_2023_logo.png"
+    },
+    {
+      "name": "intel_core_i3",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Intel_Core_i3_%2811th_generation%2C_logo%29.svg/2048px-Intel_Core_i3_%2811th_generation%2C_logo%29.svg.png"
+    },
+    {
+      "name": "intel_core_i5",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Intel_Core_i5_%2811th_generation%2C_logo%29.svg/512px-Intel_Core_i5_%2811th_generation%2C_logo%29.svg.png?20211018065945"
+    },
+    {
+      "name": "intel_core_i7",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Intel_Core_i7_Logo_2020.png"
+    },
+    {
+      "name": "intel_core_i9",
+      "picture": "https://fr.wikipedia.org/wiki/Intel_Core_i9#/media/Fichier:Intel_Core_i9_(11th_generation,_logo).svg"
+    },
+    {
+      "name": "amd",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/AMD_Logo.svg/2560px-AMD_Logo.svg.png"
+    },
+    {
+      "name": "amd_ryzen_3",
+      "picture": "https://www.notebookcheck.biz/fileadmin/Notebooks/AMD/ryzen3_badge.jpg"
+    },
+    {
+      "name": "amd_ryzen_5",
+      "picture": "https://www.notebookcheck.biz/fileadmin/Notebooks/AMD/ryzen5_badge.jpg"
+    },
+    {
+      "name": "amd_ryzen_5 pro",
+      "picture": "https://en.wikichip.org/w/images/thumb/8/8c/amd_ryzen_5_pro_logo.png/677px-amd_ryzen_5_pro_logo.png"
+    },
+    {
+      "name": "amd_ryzen_7",
+      "picture": "https://www.notebookcheck.biz/fileadmin/Notebooks/AMD/ryzen7_badge.jpg"
+    },
+    {
+      "name": "amd_ryzen_7 pro",
+      "picture": "https://en.wikichip.org/w/images/0/01/amd_ryzen_7_pro_logo.png"
+    },
+    {
+      "name": "amd_ryzen_9",
+      "picture": "https://en.wikichip.org/w/images/0/01/amd_ryzen_9_logo.png"
+    },
+    {
+      "name": "amd_ryzen_9 pro",
+      "picture": "https://en.wikichip.org/w/images/0/01/amd_ryzen_9_logo.png"
+    },
+    {
+      "name": "carte_mere",
+      "picture": "https://www.cybertek.fr/images_produits/e9221b21-b4f9-4952-ba4e-9864ca44349f.jpg"
+    },
+    {
+      "name": "E-ATX",
+      "picture": "https://storage-asset.msi.com/global/picture/image/feature/mb/Z790/MEG-Z790-GODLIKE/z790-kv-mb.png"
+    },
+    {
+      "name": "ATX",
+      "picture": "https://c1.neweggimages.com/productimage/nb640/13-162-048-V01.jpg"
+    },
+    {
+      "name": "micro_ATX",
+      "picture": "https://quadrimedia.com/135515-large_default/msi-pro-b660m-g-carte-mere-micro-atx-socket-lga-1700-ddr4-hdmi-dp.jpg"
+    },
+    {
+      "name": "mini_ATX",
+      "picture": "https://m.media-amazon.com/images/I/91mdmA-4HIL.jpg"
+    },
+    {
+      "name": "memoire_ram",
+      "picture": "https://www.gamertech.fr/wp-content/uploads/2020/03/ram-memoire-pc-gamer.png"
+    },
+    {
+      "name": "DDR3",
+      "picture": "https://m.media-amazon.com/images/I/71LFhUDYRvS._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "name": "DDR4",
+      "picture": "https://www.rueducommerce.fr/media/images/web/produit/3012266/20211119113356/corsair-vengeance-lpx-series-low-profile-16go_1200x1200.jpg"
+    },
+    {
+      "name": "DDR5",
+      "picture": "https://www.pcspecialist.fr/images/landing/corsair/ddr5/ddr5-feature.png"
+    },
+    {
+      "name": "alimentation",
+      "picture": "https://media.ldlc.com/r1600/ld/products/00/05/77/00/LD0005770002_1.jpg"
+    },
+    {
+      "name": "modulaire",
+      "picture": "https://simradio.fr/29728-large_default/alimentation-pc-corsair-1200w-hx-series-80-modulaire.jpg"
+    },
+    {
+      "name": "semi_modulaire",
+      "picture": "https://media.ldlc.com/r1600/ld/products/00/03/58/63/LD0003586345_2.jpg"
+    },
+    {
+      "name": "non_modulaire",
+      "picture": "https://www.cybertek.fr/images_produits/cf7fd67b-af50-4bbe-b93d-7ef7a589f74b.jpg"
+    },
+    {
+      "name": "ecran",
+      "picture": "https://medias3-1.ubaldi.com/visuels/5852477/pr_MA10CA58ECRANCIAY-672f4ed92a-43.jpg"
+    },
+    {
+      "name": "IPS",
+      "picture": "https://www.mshop.fr/3580-home_default/samsung-odyssey-g3-24-s24ag300nu-ecran-pc-dalle-ips-24-resolution-fhd-1920-x-1080-144hz-1ms-amd-freesync-noir-.jpg"
+    },
+    {
+      "name": "VA",
+      "picture": "https://quadrimedia.com/117858-large_default/msi-optix-g27cq4-ecran-pc-27-wqhd-gamer-incurve-dalle-va-1ms-165hz-2x-hdmi-dp-freesync.jpg"
+    },
+    {
+      "name": "TN",
+      "picture": "https://media.ldlc.com/r1600/ld/products/00/05/74/81/LD0005748141_1.jpg"
+    },
+    {
+      "name": "clavier",
+      "picture": "https://m.media-amazon.com/images/I/61mb9jQBcuL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "name": "mecanique",
+      "picture": "https://www.123comparer.fr/photoProd/zoom/3505/clavier-gamer-mecanique-cherry-mv-corsair-k60-pro-rgb-noir--333500905.jpg"
+    },
+    {
+      "name": "membrane",
+      "picture": "https://menubesttop.com/wp-content/uploads/2018/08/clavier-mecanique-ou-%C3%A0-membrane-quel-clavier-choisir.jpg"
+    },
+    {
+      "name": "pack_clavier_souris",
+      "picture": "https://media.ldlc.com/r1600/ld/products/00/05/84/38/LD0005843825_1.jpg"
+    },
+    {
+      "name": "souris",
+      "picture": "https://www.grosbill.com/images_produits/fbab70f8-5842-4c66-9a8f-ac6d92543d64.jpg"
+    },
+    {
+      "name": "ergonomique",
+      "picture": "https://m.media-amazon.com/images/I/61WF9R99BwL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "name": "refroidissement",
+      "picture": "https://www.pcworld.com/wp-content/uploads/2023/04/air_vs_water_primary-100025795-orig.jpg?quality=50&strip=all"
+    },
+    {
+      "name": "ventilateur",
+      "picture": "https://hellorse.fr/images/p/media/image/products/product_33704_21842460-5396.webp?p=image_product&type=product"
+    },
+    {
+      "name": "watercooling",
+      "picture": "https://www.cookie.fr/web/image/product.template/21405/image_1024?unique=8a7ae27"
+    },
+    {
+      "name": "RGB",
+      "picture": "https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2021/05/rgb_header.jpg"
+    },
+    {
+      "name": "carte_graphique",
+      "picture": "https://www.zdnet.com/a/img/2021/02/09/2d70b708-db22-47ef-a2f5-11ef7fbe21cc/2021-02-09-15-04-09.jpg"
+    },
+    {
+      "name": "NVIDIA",
+      "picture": "https://www.cybertek.fr/images_produits/d6eb2557-4466-4a5a-8b81-51bec23041f1.png"
+    },
+    {
+      "name": "geforce_rtx",
+      "picture": "https://www.cybertek.fr/images_produits/d6eb2557-4466-4a5a-8b81-51bec23041f1.png"
+    },
+    {
+      "name": "geforce_gtx",
+      "picture": "https://www.media-rdc.com/medias/a1bd4f4040003c06930b910aa162e922/msi-geforce-gtx-1650-super-gaming-x-product-photo-box-card.jpg"
+    },
+    {
+      "name": "geforce_Ti",
+      "picture": "https://m.media-amazon.com/images/I/61NXj1gjESL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "name": "radeon",
+      "picture": "https://images.versus.io/objects/amd-radeon-rx-vega-8.front.variety.1576684641045.jpg"
+    },
+    {
+      "name": "radeon_rx",
+      "picture": "https://media.ldlc.com/r1600/ld/products/00/05/89/68/LD0005896895_1.jpg"
+    },
+    {
+      "name": "radeon_rx_xt",
+      "picture": "https://www.cybertek.fr/images_produits/ec458ba0-932f-4a8a-99af-1393bd63dc72.jpg"
+    },
+    {
+      "name": "radeon_rx_xtx",
+      "picture": "https://m.media-amazon.com/images/I/71VikBPn3LL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "name": "boitier",
+      "picture": "https://powerlab.fr/1643-superlarge_default/xigmatek-aquarius-plus.jpg"
+    },
+    {
+      "name": "smartphone",
+      "picture": "https://www.boulanger.com/content/static/bcom/bcbu/smartphone/interface-samsung-iphone.jpg"
+    },
+    {
+      "name": "tablette",
+      "picture": "https://im.qccdn.fr/node/guide-d-achat-tablettes-tactiles-3525/inline-110518.jpg"
+    },
+    {
+      "name": "android",
+      "picture": "https://fs.npstatic.com/userfiles/7446224/image/google-pixel-7-pixel-7-pro/nextpit_google-pixel-7-front-w810h462.jpg"
+    },
+    {
+      "name": "ios",
+      "picture": "https://cdn.lesnumeriques.com/optim/test/15/156063/dd4ced98-iphone-12-le-nouveau-standard__1200_1200__318-0-1618-1300_wtmk.jpeg"
+    },
+    {
+      "name": "connectique",
+      "picture": "https://gizmodo.com.au/wp-content/uploads/2023/03/03/iStock-1267438483.jpg"
+    },
+    {
+      "name": "connectique_pc",
+      "picture": "https://falabella.scene7.com/is/image/Falabella/gsc_116275470_1426667_1?wid=800&hei=800&qlt=70"
+    },
+    {
+      "name": "hdmi",
+      "picture": "https://media.startech.com/cms/products/gallery_large/hdmmv50cm.main.jpg"
+    },
+    {
+      "name": "dvi",
+      "picture": "https://media.startech.com/cms/products/gallery_large/dviidmmx.main.jpg"
+    },
+    {
+      "name": "display_port",
+      "picture": "https://media.startech.com/cms/products/gallery_large/dp14vmm3m.main.jpg"
+    },
+    {
+      "name": "vga",
+      "picture": "https://m.media-amazon.com/images/I/61aDcRaiCWL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "name": "usb",
+      "picture": "https://m.media-amazon.com/images/I/510q1AR96tL.jpg"
+    },
+    {
+      "name": "micro_usb",
+      "picture": "https://alldock.de/media/image/product/1529/lg/alldock-micro-usb-ladekabel-160-cm.jpg"
+    },
+    {
+      "name": "type-C",
+      "picture": "https://www.ikea.com/fr/fr/images/products/lillhult-usb-c-vers-usb-c-gris-fonce__1079432_pe857533_s5.jpg?f=s"
+    },
+    {
+      "name": "lightning",
+      "picture": "https://media.startech.com/cms/products/gallery_large/usblt3mw.l.jpg"
+    },
+    {
+      "name": "jack",
+      "picture": "https://media.startech.com/cms/products/gallery_large/mu10mms.main.jpg"
+    },
+    {
+      "name": "connectique_reseau",
+      "picture": "https://media.adeo.com/marketplace/MKP/84836930/602221c5a8435503b9d204cc10e00ade.jpeg?width=650&height=650&format=jpg&quality=80&fit=bounds"
+    },
+    {
+      "name": "rj45",
+      "picture": "https://media.adeo.com/marketplace/MKP/84836930/602221c5a8435503b9d204cc10e00ade.jpeg?width=650&height=650&format=jpg&quality=80&fit=bounds"
+    },
+    {
+      "name": "cat_8",
+      "picture": "https://www.cdiscount.com/pdt2/4/6/7/1/700x700/auc5886880011467/rw/ototon-r-3m-cat-8-cable-ethernet-rj45-reseau-haut.jpg"
+    },
+    {
+      "name": "cat_7",
+      "picture": "https://www.andoelec.com/cdn/shop/products/433a5da89a82f59ff0dd9eb2427ac6c2_grande.jpg?v=1664522838"
+    },
+    {
+      "name": "cat_6",
+      "picture": "https://declic-plougastel.fr/cdn/shop/products/C-ble-Ethernet-Vention-Cat6-A-c-ble-Lan-UTP-RJ45-c-ble-de-raccordement-r_1024x.jpg?v=1609343955"
+    },
+    {
+      "name": "casque",
+      "picture": "https://fr.hyperx.com/cdn/shop/files/hyperx_cloud_ii_wireless_1_main.jpg?v=1692379212"
+    },
+    {
+      "name": "gaming",
+      "picture": "https://static.vecteezy.com/system/resources/previews/002/144/780/non_2x/gaming-banner-for-games-with-glitch-effect-neon-light-on-text-illustration-design-free-vector.jpg"
+    },
+    {
+      "name": "accessoire",
+      "picture": "https://www.lentrepotparisien.com/wp-content/uploads/2023/03/accessoire-high-tech-voiture-1.jpg"
+    },
+    {
+      "name": "antivirus",
+      "picture": "https://www.eset.com/fileadmin/ESET/INT/OG_images/og-technology-002.jpg"
+    },
+    {
+      "name": "fauteuil",
+      "picture": "https://static.fnac-static.com/multimedia/Images/FR/MDM/8c/f9/fe/16710028/1540-1/tsp20230930021525/Siege-gaming-Kira-Nagamaki-Blanc-et-noir.jpg"
+    }
   ]
 }

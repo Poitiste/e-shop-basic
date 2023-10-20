@@ -1,0 +1,9 @@
+#titlePage{
+    text-align: center;
+}
+
+#dashboardContainer .row div {
+    background-color: rgb(165, 163, 163);
+    border-radius: 1em;
+    text-align: center;
+}

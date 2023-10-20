@@ -1,0 +1,20 @@
+.result-list{
+    position: absolute;
+}
+
+.search-result {
+    padding: 10px 20px;
+    font-family: Helvetica, sans-serif;
+    color: rgba(7, 6, 6, 0.952);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: block;
+    position: relative;
+    z-index: +999;
+    background-color: white;;
+}
+
+.search-result:hover {
+    background-color: #efefef;
+}

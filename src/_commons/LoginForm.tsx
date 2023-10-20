@@ -1,8 +1,8 @@
 import React, { FunctionComponent, useContext, useState } from "react";
-import { Field } from "./types"
+import { Field } from "../const/types"
 import { validatorMail, validatorPasword } from "./validator";
 import { useNavigate } from "react-router-dom";
-import { login } from "../services/AuthService";
+import { login } from "../dbFunctions/AuthService";
 import toast from "react-hot-toast";
 import UserContext from "../_components/UserContext";
 //import UserContext from "../_components/UserContext";

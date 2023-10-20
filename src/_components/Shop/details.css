@@ -1,0 +1,27 @@
+#preloader {
+    text-align: center;
+}
+
+.loader {
+    box-sizing: border-box;    
+    animation: spin 2s linear infinite;
+    max-width: 256px;
+    max-height: 256px;
+    width: 64px;
+    height: auto;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.row + .row{
+    margin-top: 10%;
+}

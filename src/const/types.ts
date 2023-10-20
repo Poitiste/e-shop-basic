@@ -1,5 +1,5 @@
-import Product from "../models/product";
-import User from "../models/user";
+import Product from "../classes/product";
+import User from "../classes/user";
 
 export type Props = {
     formProduct: FormProduct,
@@ -21,9 +21,7 @@ export type FormProduct = {
     state: Field,
     quantity: Field,
     description: Field,
-    firstCategory: Field,
-    secondCategory: Field,
-    thirdCategory: Field,
+    categories: Field,
     picture: Field
 }
 

@@ -1,5 +1,7 @@
-nav{
-    box-sizing: border-box;
+#logo_company{
+    margin: 5px 10px;
+    height: 55px;
+    width: 50px;
 }
 
 .nav-wrapper ul li{
@@ -7,7 +9,34 @@ nav{
     font-size: larger;
 }
 
-#logo_company{
-    height: 62px;
-    width: 70px;
+.nav-wrapper ul li a:hover{
+    color: #e2b213;
+}
+
+#arrow_drop_down:hover{
+    background: #0288d1, .4;
+    color: #e2b213;
+    border-left: 1px solid #05578369;
+}
+
+#dropdown-shop{
+    background-color: #eee;
+}
+
+#dropdown-shop *{
+    color: #0288d1;
+}
+
+#dropdown-shop a:hover{
+    background-color: #0288d1;
+    color: #eee;
+}
+
+.drop-category{
+    text-align: center;
+}
+
+.drop-subcategory{
+    border: 1px solid black;
+    font-size:small;
 }

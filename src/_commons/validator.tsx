@@ -1,4 +1,4 @@
-import { Field } from "./types"
+import { Field } from "../const/types"
 import { regexString, regexPassword, regexMail, regexPhoneNumber, regexPostal, regexSIRET } from "./regex";
 
 export function validatorString(name: string): Field{

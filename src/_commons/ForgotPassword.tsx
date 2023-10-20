@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Field } from "./types";
+import { Field } from "../const/types";
 import { validatorMail } from "./validator";
 import { useNavigate } from "react-router-dom";
-import { changePassword } from "../services/password";
+import { changePassword } from "../dbFunctions/password";
 
 
 type Form = { mail: Field }
