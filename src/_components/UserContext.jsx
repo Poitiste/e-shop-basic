@@ -17,8 +17,6 @@ export const UserConnectProvider = ({ children }) => {
 		setCurrentUser(checkLoggedIn());
 	}, []);
 
-	console.log('usercontext', currentUser);
-
 	return (
 		<UserContext.Provider value={[currentUser, setCurrentUser]}>
 			{currentUser.value ? children : <LoginForm />}
@@ -27,7 +25,7 @@ export const UserConnectProvider = ({ children }) => {
 };
 
 export const checkLoggedIn = async () => {
-	let cuser = isAuthenticated();
+	let cuser = await isAuthenticated();
 	if (cuser === null) cuser = 'not connected';
 	return cuser;
 };

@@ -51,10 +51,7 @@
   "config": {
     "exportAliases": {
       "@components": "./src/_commons/components",
-      "@services": "./src/_commons/services",
-      "@useCases": "./src/_commons/useCases",
-      "@pages": "./src/pages",
-      "@models": "./src/models"
+      "@pages": "./src/pages"
     }
   }
 }

@@ -8,9 +8,11 @@ const Dashboard = () => {
 
 			<div className="container" id='dashboardContainer'>
 				<div className="row">
-					<div className="col s12 m5">
-						<h4>Ajouter un produit</h4>
-					</div>
+					<Link to={`http://localhost:3000/admin/add-product`}>
+						<div className="col s12 m5">
+							<h4>Ajouter un produit</h4>
+						</div>
+					</Link>
 
 					<div className="col s12 m5 offset-m1">
 						<h4>Modifier un produit</h4>

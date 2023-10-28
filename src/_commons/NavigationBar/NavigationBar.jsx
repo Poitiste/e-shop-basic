@@ -9,9 +9,11 @@ import UserContext from '../../_components/UserContext';
 import toast from 'react-hot-toast';
 import QuickSearch from '../Search/QuickSearch';
 import SearchBarResults from '../Search/SearchBarResults';
+import { CartContext } from '../../_components/CartContext';
 
 
 export default function NavigationBar() {
+    //for links
     const navigate = useNavigate();
 
     //to keep the user connected
@@ -28,9 +30,13 @@ export default function NavigationBar() {
     const [input, setInput] = useState();
     const [results, setResults] = useState([]);
 
+    //for shopping cart counter
+    const cart = useContext(CartContext);
+    const cartCounter = cart.items.reduce((sum, product) => sum + product.quantity, 0)
+
     useEffect(() => {
         if ((currentUser !== 'not connected') && (currentUser !== undefined)) {
-            userDatas.current = (JSON.parse(currentUser));
+            userDatas.current = JSON.parse(currentUser);
         }
     }, [currentUser])
 
@@ -71,9 +77,14 @@ export default function NavigationBar() {
                         </li>
 
                         {
-                            (currentUser !== undefined) && (currentUser !== 'not connected') ?
+                            (userDatas.current !== undefined) || (userDatas.current !== 'not connected') ?
                                 <>
-                                    <li><Link to={'checkout'}><i className="material-icons left">shopping_cart</i>Mon Panier</Link></li>
+                                    <li>
+                                        <Link to={'shopping-cart'}>
+                                            <i className="material-icons left">shopping_cart</i>
+                                            Mon Panier {cartCounter > 0 ? `(${cartCounter})` : ""}
+                                        </Link>
+                                    </li>
                                     <li><Link to={'account'}>Mon Compte</Link></li>
                                     <li><Link onClick={handleLogOut}>Me déconnecter</Link></li>
                                 </>
@@ -183,12 +194,17 @@ export default function NavigationBar() {
                 <li><Link to={'shop/promotions'} category={"Promotions"}>Promotions</Link></li>
                 <li><Link to={'shop/news'}>Nouveautés</Link></li>
                 <li><Link to={'services'}>Prestations</Link></li>
-                <li><Link to={'checkout'}><i className="material-icons left">shopping_cart</i>Mon Panier</Link></li>
+                <li><Link to={'shopping-cart'}><i className="material-icons left">shopping_cart</i>Mon Panier</Link></li>
 
                 {
                     (currentUser !== undefined) && (currentUser !== 'not connected') ?
                         <>
-                            <li><Link to={'checkout'}><i className="material-icons left">shopping_cart</i>Mon Panier</Link></li>
+                            <li>
+                                <Link to={'shopping-cart'}>
+                                    <i className="material-icons left">shopping_cart</i>
+                                    Mon Panier {cartCounter > 0 ? `(${cartCounter})` : ""}
+                                </Link>
+                            </li>
                             <li><Link to={'account'}>Mon Compte</Link></li>
                             <li><Link onClick={handleLogOut}>Me déconnecter</Link></li>
                         </>

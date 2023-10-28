@@ -1,0 +1,39 @@
+.bg-red{
+    background-color: rgb(183, 23, 23);
+    color: #eee;
+}
+
+.bg-blue{
+    background-color: rgba(21, 21, 225, 0.72);
+    color: #eee;
+}
+
+.bg-green{
+    background-color: #33c673;
+    color: #eee;
+    font-weight: bold;
+}
+
+.bg-none{
+    background-color: transparent;
+}
+
+.cart-image{
+    object-fit: scale-down;
+}
+
+.quantity-modifier{
+    justify-content: space-around;
+}
+
+.set-btn-cart{
+    width: 4em;
+    height: 2em;
+}
+
+.quantity-value{
+    display: inline-block;
+    width: 4em;
+    height: 2em;
+    text-align: center;
+}

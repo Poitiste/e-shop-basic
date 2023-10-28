@@ -11,7 +11,7 @@ export default class Product{
     price: number;
     created: Date;
     updated: Date;
-    bestSeller : boolean;
+    sold : number;
 
     constructor(
         id:number,
@@ -26,7 +26,7 @@ export default class Product{
         price: number,
         created: Date = new Date(),
         updated: Date = new Date(),
-        bestSeller : boolean = false
+        sold : number = 0
     ){
         this.id = id;
         this.name = name;
@@ -40,6 +40,6 @@ export default class Product{
         this.price=price;
         this.created = created;
         this.updated = updated;
-        this.bestSeller = bestSeller;
+        this.sold = sold;
     };
 }

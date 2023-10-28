@@ -14,9 +14,29 @@ export type Field = {
     isValid?: boolean
 }
 
+export type TagsForm = {
+    tagInput: Field,
+    visualTags : Field
+}
+
+export type newProduct = {
+    name: string;
+    brand: string;
+    barcode: string;
+    state: string;
+    description: string;
+    quantity: number;
+    picture: string;
+    categories: Array<string>;
+    price: number;
+    created: Date;
+    updated: Date;
+}
+
 export type FormProduct = {
     name: Field,
     brand: Field,
+    price: Field,
     barcode: Field,
     state: Field,
     quantity: Field,

@@ -1,14 +1,16 @@
 import axios from "axios";
 import Product from "../classes/product";
+import { newProduct } from "../const/types";
+import toast from "react-hot-toast";
+import { redirect } from "react-router-dom";
 
 export default class ProductService {
     static isDev = (!process.env.NODE_ENV || process.env.NODE_ENV === "development");
 
-    static addProduct(product: Product){
-        product.created = new Date(product.created);
+    static addProduct(newProduct: newProduct) {
         if (this.isDev) {
             /*
-            return fetch(`http://localhost:3001/shop/news`, {
+            return fetch(`http://localhost:3001/products`, {
                 method: "POST",
                 body: JSON.stringify(product),
                 headers: { 'content-type': 'application/json' }
@@ -16,13 +18,30 @@ export default class ProductService {
                 .then(Response => Response.json())
                 .catch(error => this.handleError(error));
             */
-           return axios.post(`http://localhost:3001/shop/news`)
-           .then(res => res.data)
-           .catch(error => this.handleError(error));
+            try {
+                axios.get(`http://localhost:3001/products?name=${newProduct.name}`)
+                    .then(res => {
+                        if (res.data.length > 0) {
+                            toast.error("Cet objet existe déjà !");
+                        }
+                        else {
+                            axios.post(`http://localhost:3001/products`, newProduct)
+                                .then(_ => {
+                                    toast.success(`${newProduct.name} a été enregistré !`);
+                                    redirect("/admin/dashboard")
+                                })
+                                .catch(error => this.handleError(error));
+                        }
+                    })
+                    .catch(error => this.handleError(error));
+            }
+            catch (error) {
+                console.error(error);
+            }
         }
     }
 
-    static getProductsByCategory(category: string){
+    static getProductsByCategory(category: string) {
         if (this.isDev) {
             return (
                 axios.get(`http://localhost:3001/products?q=${category}`)
@@ -45,17 +64,17 @@ export default class ProductService {
         }
     }
 
-    static getProductById(id: string){
+    static getProductById(id: string) {
         if (this.isDev) {
             return (
                 axios.get(`http://localhost:3001/products?id=${id}`)
-                    .then(res => {return res.data[0]} )
+                    .then(res => { return res.data[0] })
                     .catch(error => this.handleError(error))
             )
         }
     }
 
-    static updateProduct(product: Product){
+    static updateProduct(product: Product) {
         if (this.isDev) {
             /*
             return (
@@ -76,7 +95,7 @@ export default class ProductService {
         }
     }
 
-    static deleteProduct(product: Product){
+    static deleteProduct(product: Product) {
         if (this.isDev) {
             /*
             return fetch('http://localhost:3001/shop//json', {
@@ -90,7 +109,7 @@ export default class ProductService {
         }
     }
 
-    static searchProduct(term: string){
+    static searchProduct(term: string) {
         if (this.isDev) {
             /*
                 return fetch(`http://localhost:3001/shop/products?q=${term}`)
@@ -105,15 +124,5 @@ export default class ProductService {
 
     static handleError(error: Error): void {
         console.error(error);
-    }
-
-    static getCheckout(userId: number){
-        if (this.isDev) {
-            return (
-                fetch(`http://localhost:3001/checkout}`)
-                    .then(Response => Response.json())
-                    .catch(error => this.handleError(error))
-            );
-        }
     }
 }

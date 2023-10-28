@@ -1,4 +1,4 @@
-import Carousel from "../../_commons/Carousel/Carousel";
+import Carousel from "../../../_commons/Carousel/Carousel";
 import { useReducer } from 'react';
 import './EditCarousel.css';
 

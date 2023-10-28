@@ -9,7 +9,11 @@
       "description": "<b>vitesse de lecture</b> : 250Mo/s<br/><b>vitesse d'écriture</b> : 150Mo/s",
       "quantity": 2,
       "picture": "https://www.cdiscount.com/pdt2/9/2/1/1/550x550/auc8765307756921/rw/disque-dur-ssd-western-digital-wd-blue-ssd-dis.jpg",
-      "categories": ["stockage","disque_dur","ssd"],
+      "categories": [
+        "stockage",
+        "disque_dur",
+        "ssd"
+      ],
       "price": 20
     },
     {
@@ -21,7 +25,11 @@
       "description": "<table><th>Disque dur SSD de 240Go Western Digital Green<th><tr><td><b>vitesse de lecture</b> : 540Mo/s</td><td><b>vitesse d'écriture</b> : 465Mo/s</td></tr></table>",
       "quantity": 5,
       "picture": "https://www.cdiscount.com/pdt2/g/0/a/1/300x300/wds480g3g0a/rw/western-digital-green-disque-ssd-interne-480.jpg",
-      "categories": ["stockage","disque_dur","ssd"],
+      "categories": [
+        "stockage",
+        "disque_dur",
+        "ssd"
+      ],
       "price": 24.99
     },
     {
@@ -33,7 +41,11 @@
       "description": "<table><tr><td>Compatible avec PC, PS5, PS4, Xbox One, Xbox Series X|S et d'autres plateformes avec un port de 3,5 mm</td></tr><tr><td>Les transducteurs à chambre double HyperX génèrent un son cristallin et moins de distorsions acoustiques Niveau de pression acoustique : 98dBSPL/mW à 1kHz</td></tr><tr><td>Confort certifié par Discord et TeamSpeak</td></tr><tr><td>Cadre aluminium durable avec arceau élargi</td></tr><tr><td>Câble tressé amovible avec commandes audio en ligne</td></tr><tr><td>Microphone amovible à réduction de bruit</td></tr><tr><td>Impédance: 65 Ω</td></tr><tr><td>Réponse en fréquence : 50Hz-18,000Hz</td></tr><tr><td>Le Cloud Alpha disposant d'un câble détachable, il est également important de s'assurer que ce dernier est complètement inséré dans l'oreillette du casque Aucune partie grise sur la prise jack ne doit être visible une fois le câble branché</td></tr></table>",
       "quantity": 3,
       "picture": "https://media.hardware.fr/ld/products/00/05/94/75/LD0005947526.jpg",
-      "categories": ["peripheriques","casque","gaming"],
+      "categories": [
+        "peripheriques",
+        "casque",
+        "gaming"
+      ],
       "price": 65.99
     },
     {
@@ -45,7 +57,11 @@
       "description": "<table><tr><td>écran</td><td>AMOLED de 6,67 pouces</td></tr>< tr > <td>taux de rafraîchissement</ td > <td>120 Hz < /td></tr ><tr><td>CPU < /td><td>SoC Mediatek Dimensity 1080</td > </tr>< tr > <td>RAM < /td><td>jusqu'à 8 Go</td > </tr>< tr > <td>stockage < /td><td>256 Go</td > </tr> < tr > <td>batterie < /td><td>5000 mAh</tr ><tr><td>charge rapide < /td><td>compatible 67 W</tr ><th></th>< th > Appareil photo < /th>< tr > trois capteurs à l'arrière </tr>< tr > <td>grand - angle de 50 mégapixels(avec stabilisation optique) < /td></tr ><tr><td>ultra grand - angle de 8 mégapixels < /td></tr ><tr><td>objectif macro de 2 mégapixels < /td></tr ></table>",
       "quantity": 1,
       "picture": "https://i05.appmifile.com/903_item_fr/12/05/2023/a9f1c00ecd8f61b9dd67801bc8cff0f6!800x800!85.png",
-      "categories": ["smartphone","android","xioami"],
+      "categories": [
+        "smartphone",
+        "android",
+        "xioami"
+      ],
       "price": 209.99
     },
     {
@@ -57,7 +73,11 @@
       "description": "Console de salon garantie 6 mois",
       "quantity": 1,
       "picture": "https://m.media-amazon.com/images/I/51x2uufH6SL.jpg",
-      "categories": ["jeux_et_loisirs","console","ps4"],
+      "categories": [
+        "jeux_et_loisirs",
+        "console",
+        "ps4"
+      ],
       "price": 150
     },
     {
@@ -69,7 +89,11 @@
       "description": "Disque dur SSD de 2 To",
       "quantity": 5,
       "picture": "https://m.media-amazon.com/images/I/71icCF9jHLS.jpg",
-      "categories" : ["stockage","disque_dur","hdd"],
+      "categories": [
+        "stockage",
+        "disque_dur",
+        "hdd"
+      ],
       "price": 85
     },
     {
@@ -81,8 +105,30 @@
       "description": "de la merde comme d'hab",
       "quantity": 10,
       "picture": "https://www.cdiscount.com/pdt2/u/r/p/1/700x700/ippmax14128purp/rw/apple-iphone-14-pro-max-128gb-deep-purple.jpg",
-      "categories": ["smartphone","ios","iphone"],
+      "categories": [
+        "smartphone",
+        "ios",
+        "iphone"
+      ],
       "price": 1599.99
+    },
+    {
+      "name": "Saxophone Baryton",
+      "brand": "Yamaha",
+      "barcode": "1621959596592922",
+      "state": "occasion",
+      "description": "saxo sex",
+      "quantity": "2",
+      "picture": "blob:http://localhost:3000/df91d918-0f35-4338-b573-f68922170083",
+      "categories": [
+        "instrument",
+        "vet",
+        "bois"
+      ],
+      "price": "679.99",
+      "created": "2023-10-28T17:18:44.241Z",
+      "updated": "2023-10-28T17:18:44.241Z",
+      "id": 8
     }
   ],
   "users": [
@@ -538,5 +584,6 @@
       "name": "fauteuil",
       "picture": "https://static.fnac-static.com/multimedia/Images/FR/MDM/8c/f9/fe/16710028/1540-1/tsp20230930021525/Siege-gaming-Kira-Nagamaki-Blanc-et-noir.jpg"
     }
-  ]
+  ],
+  "shoppingCart": []
 }

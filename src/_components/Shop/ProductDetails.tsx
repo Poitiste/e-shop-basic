@@ -1,16 +1,23 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { useParams, Link, redirect } from 'react-router-dom';
 import Product from '../../classes/product';
-import { useParams, Link } from 'react-router-dom';
 import ProductService from '../../dbFunctions/ProductService';
 import './details.css'
 import { components, peripherals } from '../../const/const';
 import LoadingSpinner from '../LoadingSpinner';
+import { CartContext } from '../CartContext';
+
 
 const ProductDetails = () => {
     const { id } = useParams();
-    const [product, setProduct] = useState<Product | null>(null);
-    const [firstBreadcrumb, setFirstBreadcrumb] = useState<string>("");
     const [isLoading, setIsLoading] = useState<boolean>(true);
+
+    //for categories design
+    const [firstBreadcrumb, setFirstBreadcrumb] = useState<string>("");
+    const [product, setProduct] = useState<Product | null>(null);
+
+    const [quantity, setQuantity] = useState(1);
+    const cart = useContext(CartContext);
 
     useEffect(() => {
         if (id !== undefined) {
@@ -21,7 +28,9 @@ const ProductDetails = () => {
                     setIsLoading(false);
                 })
             }
+            else redirect("/")
 
+            //to show the path of productDetails
             if (product?.categories[0]) {
                 if (components.includes(product?.categories[0])) {
                     setFirstBreadcrumb("composants")
@@ -34,17 +43,30 @@ const ProductDetails = () => {
     }, // eslint-disable-next-line
         [id]);
 
+    const handleChange = (value: number, minValue: number, maxValue: number) => {
+        if (value < minValue)
+            setQuantity(minValue)
+
+        if (value > maxValue)
+            setQuantity(maxValue)
+
+        if (value >= minValue && value <= maxValue)
+            setQuantity(value)
+    }
+
     return (
         <div className='container'>
             {
                 isLoading ? (
-                    <LoadingSpinner/>
+                    <LoadingSpinner />
                 ) : (
                     product ? (
                         <div className='row'>
                             <div id='breadcrumb'>
+                                <Link to={`http://localhost:3000/shop/`}>shop</Link>
+                                <span>{' > '}</span>
                                 {
-                                    firstBreadcrumb ? (
+                                    firstBreadcrumb.length ? (
                                         <span><Link to={`http://localhost:3000/shop/${firstBreadcrumb}`}>{firstBreadcrumb}</Link>{' > '}</span>
                                     ) : ("")
                                 }
@@ -75,14 +97,29 @@ const ProductDetails = () => {
                                                             type="number"
                                                             max={product.quantity}
                                                             min={1} step={1}
-                                                            defaultValue={1}
+                                                            value={quantity}
                                                             maxLength={2}
                                                             style={{ width: '70px' }}
                                                             id='qte'
+                                                            onChange={(e) => handleChange(
+                                                                parseInt(e.target.value),
+                                                                parseInt(e.target.min),
+                                                                parseInt(e.target.max)
+                                                            )}
                                                         />
                                                     </td>
                                                     <td>
-                                                        <button style={{ padding: '10px 5px', backgroundColor: '#0288d1', color: 'white', borderRadius: '5px', border: 'none' }}>Ajouter au panier</button>
+                                                        <button
+                                                            style={{
+                                                                padding: '10px 5px',
+                                                                backgroundColor: '#0288d1',
+                                                                color: 'white',
+                                                                borderRadius: '5px',
+                                                                border: 'none'
+                                                            }}
+                                                            onClick={() => cart.addToCart({ ...product, ...{ quantity: quantity }},product)}
+                                                        >
+                                                            Ajouter au panier</button>
                                                     </td>
                                                 </tr>
                                             </thead>

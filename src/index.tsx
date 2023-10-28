@@ -14,12 +14,15 @@ import Connection from './_components/Connection';
 import LoginForm from './_commons/LoginForm';
 import RegisterForm from './_commons/RegisterForm';
 import ForgotPassword from './_commons/ForgotPassword';
-import Checkout from './_components/Checkout';
 import Dashboard from './_components/admin/Dashboard/Dashboard';
 import ShopComponents from './_components/Shop/ShopComponents';
 import ShopPeripherals from './_components/Shop/ShopPeripherals';
 import ShopHome from './_components/Shop/ShopHome';
-import EditCarousel from './_components/admin/EditCarousel';
+import EditCarousel from './_components/admin/EditCarousel/EditCarousel';
+import ShoppingCart from './_components/Shop/ShoppingCart';
+import Cancel from './_components/Shop/Cancel';
+import Succes from './_components/Shop/Succes';
+import AddProduct from './_components/admin/Product/AddProduct';
 
 const router = createBrowserRouter([
   {
@@ -80,16 +83,32 @@ const router = createBrowserRouter([
         element: <ForgotPassword />
       },
       {
-        path: "checkout",
-        element: <Checkout/>
+        path: "shopping-cart",
+        element: <ShoppingCart/>
       },
       {
-        path: "dashboard",
+        path: "cancel",
+        element: <Cancel/>
+      },
+      {
+        path: "succes",
+        element: <Succes/>
+      },
+      {
+        path: "/admin",
         element: <Dashboard/>
       },
       {
-        path: "admin/carousel",
+        path: "/admin/dashboard",
+        element: <Dashboard/>
+      },
+      {
+        path: "/admin/carousel",
         element: <EditCarousel/>
+      },
+      {
+        path: "/admin/add-product",
+        element: <AddProduct/>
       },
       {
         path: "*",

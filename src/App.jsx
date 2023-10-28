@@ -4,7 +4,8 @@ import NavigationBar from './_commons/NavigationBar/NavigationBar'
 import 'materialize-css/dist/css/materialize.min.css';
 import UserContext from './_components/UserContext';
 import { useState } from 'react';
-//import logo from './assets/logo_iti.png';
+import CartProvider from './_components/CartContext';
+
 
 function App() {
   const [currentUser, setCurrentUser] = useState('not connected');
@@ -12,9 +13,11 @@ function App() {
   return (
     <div id='container'>
       <div className="render-children">
-        <UserContext.Provider value={{currentUser, setCurrentUser}}>
-          <NavigationBar />
-          <Outlet />
+        <UserContext.Provider value={{ currentUser, setCurrentUser }}>
+          <CartProvider>
+            <NavigationBar />
+            <Outlet />
+          </CartProvider>
         </UserContext.Provider>
       </div>
     </div>

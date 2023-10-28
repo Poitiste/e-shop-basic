@@ -8,6 +8,7 @@ const ProductForm: FunctionComponent<Props> = ({ product }) => {
     const [form, setForm] = useState<FormProduct>({
         name: { value: product.name, isValid: true },
         brand: { value: product.brand, isValid: true },
+        price: { value: product.price, isValid: true },
         barcode: { value: product.barcode, isValid: true },
         state: { value: product.state, isValid: true },
         quantity: { value: product.quantity, isValid: true },

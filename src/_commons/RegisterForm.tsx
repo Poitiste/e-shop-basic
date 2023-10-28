@@ -1,7 +1,6 @@
 import React, { FunctionComponent, useState } from "react";
 import { Field } from "../const/types"
 import { validatorMail, validatorPasword, validatorPhoneNumber, validatorPostal, validatorSIRET, validatorString } from "./validator";
-import { useNavigate } from "react-router-dom";
 import { register } from "../dbFunctions/register";
 
 type Form = {
@@ -31,8 +30,6 @@ const RegisterForm: FunctionComponent = () => {
         password: { value: '' },
         confirmPassword: { value: '' }
     });
-
-    const navigate = useNavigate()
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
         const fieldName: string = e.target.name;
@@ -96,7 +93,6 @@ const RegisterForm: FunctionComponent = () => {
         if (valideForm()) {
             try {
                 register(form);
-                navigate("/");
             } catch (error) {
                 console.error(error);
             }
